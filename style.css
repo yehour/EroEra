@@ -27,11 +27,11 @@ input {
 }
 @font-face {
     font-family: 'CopyistThin';
-    src: url('copyist.eot');
-    src: url('copyist.eot?#iefix') format('embedded-opentype'),
-         url('copyist.woff') format('woff'),
-         url('copyist.ttf') format('truetype'),
-         url('copyist.svg#CopyistThin') format('svg');
+    src: url('Copyist.eot');
+    src: url('Copyist.eot?#iefix') format('embedded-opentype'),
+         url('Copyist.woff') format('woff'),
+         url('Copyist.ttf') format('truetype'),
+         url('Copyist.svg#CopyistThin') format('svg');
     font-weight:lighter;
 }
 a {
