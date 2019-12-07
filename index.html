@@ -1,12 +1,606 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Заголовок</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <h1>Мой первый заголовок</h1>
-    <p>Мой первый абзац</p>
-  </body>
-</html>
+* {
+	margin: 0;
+	padding: 0;
+}
+html {height:100.01%;
+    background:#fff2d1;
+}
+body {
+	font: 80%  Helvetica, Arial, sans-serif;
+	height: 100%;
+	margin:0;
+  padding:0;
+  color:black;
+}
+p {margin: 0px;padding:0px;}
+img {
+	border: none;
+	border: inherit solid #d8261c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc);
+}
+input {
+	vertical-align: middle;
+}
+@font-face {
+    font-family: 'CopyistThin';
+    src: url('copyist.eot');
+    src: url('copyist.eot?#iefix') format('embedded-opentype'),
+         url('copyist.woff') format('woff'),
+         url('copyist.ttf') format('truetype'),
+         url('copyist.svg#CopyistThin') format('svg');
+    font-weight:lighter;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+a:hover {
+	text-decoration: blink;
+}
+a:focus {
+    background: rgba(255,255,255,0.5);
+    border: 2px solid #d8261c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc);	
+}
+h1, h2, h3, h4, h5 {
+	margin-top: 0px;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 1.8em; 
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+blockquote {
+	padding:5px;
+	margin-left:10px;
+	background: rgba(255,38,28,0.05);	
+    	text-decoration: none;
+}
+blockquote:after {
+  content: 'Конец цитаты';
+  display: block; text-align: right;
+  font-size: smaller;
+  color:  rgba(255,38,28,0.5); background: #fff2d1;
+  border-top: solid 1px;
+  padding-top: 0.5em;
+}
+blockquote:before {
+  content: 'Начало цитаты';
+  display: block; text-align: left;
+  font-size: smaller;
+  color: rgba(255,38,28,0.5); background: #fff2d1;
+  border-bottom: solid 1px;
+  padding-bottom: 0.5em;
+}
+blockquote p {	
+    	text-decoration: none;
+}
+ul {
+	padding-left:15px;
+}
+textarea {
+	width:100%;
+	border:1px solid #BFBFBF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc); 
+}
+.c {text-align:center;
+	font-size:13px;
+	font-weight:bold;
+}
+.b {font-weight:bold;}
+
+#add input {
+	border:1px solid #BFBFBF;
+	line-height:25px;
+	font-size: 1.2em;
+	vertical-align:middle;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc); 
+	height:25px;
+	color:#6d6e70;
+}
+#wrapper {
+	width: 100%;
+	min-width: 780px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    background: url("liebe2.jpg") left top no-repeat, url("oral6.jpg") right top no-repeat;
+    background-size: 36%;
+}
+
+
+/* Header
+*/
+#header {
+  height:auto;
+  text-align:right;
+  font-size:115%;
+  line-height: 6em;
+  vertical-align:200px;
+}
+#search .input {
+    margin-top: -27%;
+	border:1px solid #BFBFBF;
+	font-size: 1em;
+	width:200px;
+    position:relative;
+    z-index: 3;
+	vertical-align:middle;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc); 
+	color:#6d6e70;
+}
+#header .logo {
+	height:58px;
+    padding-top:10%;
+}
+
+.head {
+	float:left;
+    width:100%;
+	margin: 0 0 -6% 0;
+	text-align:center;
+}
+
+.head  a {
+	font-family: CopyistThin;
+    font-size: 11.1em;
+	color:#d8261c;
+	letter-spacing: 0em; 
+  	text-shadow:  #fff2d1 3px 3px 5px,  #fff2d1 -3px -3px 5px,  #fff2d1 -2px 0px 2px,  #fff2d1 2px 0px 2px;
+  	position: relative; 
+	z-index: 1;  
+}
+
+.head a:hover {
+  color:red;
+-moz-transition:color 0.6s;
+-webkit-transition:color 0.6s;
+-o-transition:color 0.6s;
+-ms-transition:color 0.6s;
+  transition:color 0.6s;
+  text-decoration:none;
+}
+
+.head  a:after { 
+	content: "Эротиkон"; 
+	position: absolute;
+    left: -9.6%;
+    top: 37.7%;
+    width: 100%;
+    height: 100%; 
+  	color: rgba(198,186,161,0.02); 
+	text-shadow: rgba(246, 196, 168,0.5) 0 0 0.05em;
+-moz-transform: matrix(1, 0, 0.3, 1.4, 50, 0); 
+-webkit-transform: matrix(1, 0, 0.3, 1.4, 50, 0); 
+-o-transform: matrix(1, 0, 0.3, 1.4, 50, 0); 
+-ms-transform: matrix(1, 0, 0.3, 1.4, 50, 0); 
+transform: matrix(1, 0, 0.3, 1.4, 50, 0);   
+	z-index: -1;
+}
+
+.head a:focus {
+    background: rgba(255,255,255,0.5);
+    border: 2px solid #d8261c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc);
+}
+
+.head p {
+	margin-left:13%;
+	margin-bottom:30px;	
+	font-size: 8em;
+	font-family: CopyistThin;
+	word-spacing: -0.38em;
+	color:#000;
+}
+
+.mainmenu {
+  font-size:10px;
+  clear:both;
+}
+.menu  {
+  display:block;
+  float:right;
+  width:93px;
+  height:24px;
+  background-image:url("knop.png");
+  background-position:center top;
+  background-repeat:no-repeat;
+  text-align:center;
+  text-decoration:none;
+  vertical-align:center;
+  line-height:22px;
+  color:#6d6e70;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+
+.mainmenu a:hover {
+  background-image:url("knop_hover.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+  color:white;
+    text-decoration:none;
+}
+
+.mainmenu a:active {
+  background-image:url("knop.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+  color:#6d6e70;
+}
+
+
+
+/* Middle
+*/
+#middle {
+	width: 100%;
+	padding: 0 0 85px 0;
+	height: 1%;
+    position: relative;
+	z-index: 1;  
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	padding: 0 10px 0 305px;
+	/* если хотите добавить правую колонку 
+	 * то расскомментируйте  строку ниже
+	 * и при необходимести измените ширину 
+	 * так же расскоментируйте в файле footer.html */
+	  
+	 /* padding: 270px лево 270px право; */
+}
+#content ul {
+	padding-left:40px;
+}
+/* Sidebar Left
+*/
+.sl {
+	float: left;
+	width: 300px;
+	margin-left: -100%;
+	position: relative;
+	text-align:left;
+} 
+
+/* Sidebar Right
+*/
+.sr {
+	float: left;
+	margin-right: -3px;
+	width: 250px;
+	margin-left: -250px;
+	position: relative;
+	text-align:left;
+}
+
+
+/* Footer
+ */
+#footer {
+	/* margin: -66px auto 0;
+	height:66px; */
+	margin: -75px auto 0;
+	height:55px; 
+	min-width: 780px;
+	background-image:url("bot.png");
+	background-position:left top;
+	background-repeat:repeat-x;
+	padding-top:20px;
+	text-align:center;
+}
+
+/* Контент
+ */
+.post {
+	margin: 0px 0px 30px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#content .pr {
+}
+
+#content .pl {
+}
+
+#content .title {
+	background-image:url("line.png");
+	background-position:bottom;
+	background-repeat:repeat-x;
+	margin-left: 6px;
+    margin-right: -10px;
+	padding: 0px;
+    border-bottom: 1px dashed #d8261c;
+	height:35px;
+	font-weight: bold;
+	vertical-align:middle;
+	line-height:32px;	
+	overflow:hidden;	
+}
+
+#content .title a {	
+    padding-left: 25px;
+	text-shadow: #fff2d1 -1px 0, #fff2d1 1px 1px;
+	letter-spacing: 0.01em;
+}
+
+#content .title a:hover {
+	text-decoration:blink;
+}
+
+#content .entry {
+	padding:5px;
+	font-family:CopyistThin; 
+	font-size: 4em;
+	line-height:0.9em;
+	word-spacing: -0.25em;
+}
+#content .entry a {
+	text-decoration:none;
+    border-bottom: solid 1px black;
+}
+#content .entry a:hover {
+    color: red;  
+    border-bottom: solid 1px red;
+}
+#content .entry code {
+font-size: 0.45em;
+line-height: 0.9em;
+word-spacing: -0.25em;
+}
+#content .entry p:first-letter {
+	font-size: 200%;
+	color: #d8261c;
+	line-height: 0.5em;
+}
+#content .meta {
+	padding-left: 41px;	
+    margin-right: 23px;  
+	margin-top: -5px;
+	margin-bottom: -40px;
+}
+#content .meta a {
+	font-weight: bold;
+	font-size: 110%;	
+    background-color:#d8261c;
+    color: #fff2d1;
+    border: ridge 2px white;
+	padding: 1px 2px 3px;
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+     transform: scale(1.1);
+}
+#content .meta a:hover {
+  	color: #d8261c;
+    background-color:#fff2d1;
+	border: groove 2px red;
+-moz-transition:background-color 0.5s ease-in 0.3s, color 0.3s ease-out 0.1s;
+-webkit-transition:background-color 0.5s ease-in 0.3s, color 0.3s ease-out 0.1s;
+-o-transition:background-color 0.5s ease-in 0.3s, color 0.3s ease-out 0.1s;
+-ms-transition:background-color 0.5s ease-in 0.3s, color 0.3s ease-out 0.1s;
+  transition:background-color 0.5s ease-in 0.3s, color 0.3s ease-out 0.1s;
+	text-decoration:blink;
+}
+#content .byline {
+	font-size: 120%;
+	margin-top: 5px;
+	margin-left: 33px;
+	clear:both;
+	text-shadow: #fff2d1 -1px 0, #fff2d1 1px 1px;	
+}
+#content .byline a {
+	font-size: 100%;
+	font-weight: bolder;	
+}
+#content .byline a:hover {
+	text-decoration:blink;
+}
+#content .entry {
+	padding:5px 20px 5px 20px;
+}
+#content  ul {
+	padding-left:40px;
+}
+#content  ul li {
+	line-height:120%;
+}
+
+/* Комменты
+ */
+#comment {
+	font-size: 1.1em;
+	width:80%;
+	color:#6d6e70;
+	text-align:left;
+	padding:5px;
+}
+#comment .gravatar {
+	float:right;
+	padding:0px;
+	margin:5px;
+	border:1px solid #BFBFBF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc); 
+}
+#comment .nick {
+	font-weight:bold;
+}
+#comment .nick a{
+	text-decoration:underline;
+}
+#comment .title {
+	overflow:visible;
+}
+#comment .comments {
+	padding:0 15px 0 15px;
+}
+/* Форма комментов
+ */
+#commentf {
+	text-align:left;
+	color:#6d6e70;
+	font-size: 1.4em;
+	vertical-align:middle;
+	line-height:25px;
+	width:70%;
+}
+#commentf .input {
+	border:1px solid #BFBFBF;
+	line-height:25px;
+	font-size: 1.2em;
+	width:100%;
+	vertical-align:middle;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px;
+	border-radius: 5px; 
+	behavior: url(http://curved-corner.googlecode.com/files/border-radius.htc); 
+	height:25px;
+	color:#6d6e70;
+}
+
+/* Сайдбары
+ */
+.sidebar {
+    margin-top: 20px;
+    padding: 0 5px 0 5px;
+	font-weight: bolder;
+	text-align: justify;
+  	font-size:13px;
+}
+.sidebar a {
+    color: #d8261c;
+	text-shadow: #fff2d1 -1px 0, #fff2d1 1px 1px;
+}
+.sidebar a:hover {
+    color:red;
+	text-decoration:blink;
+}
+.sidebar h6 {
+	width:290px;
+	height:35px;
+	margin: 15px 0px;
+    font-family:CopyistThin;
+	font-size: 5em;
+	font-weight: lighter;
+	color:black;
+	vertical-align:middle;
+	word-spacing: -0.25em;
+	line-height:35px;
+	text-align:center;
+	text-shadow: #fff2d1 -1px 1px, #fff2d1 1px 1px;
+}
+.sidefont {
+	padding: 0 10px 0 10px;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+}
+.sidefont:first-letter {
+    font-size: 150%;
+}
+.sidebar .padd {
+	padding:0 15px 0 15px;
+}
+
+/* админка
+*/
+#mqconfig {
+	border-top:1px solid #d8261c;
+	border-left:1px solid #d8261c;
+}
+#mqconfig  table {
+	padding:5px;
+}
+#mqconfig td {
+	border-bottom:1px solid #d8261c;
+	border-right:1px solid #d8261c;
+	padding:5px;
+	font-weight:bold;
+}
+#mqconfig .input {
+	border:1px solid #d8261c;
+	width:100%;
+	height:20px;
+}
+#mqconfig select  {
+	border:1px solid #d8261c;
+	width:100%;
+	height:20px;
+}
+#mqplugins {
+	border-top:1px solid #d8261c;
+	border-left:1px solid #d8261c;
+}
+#mqplugins td {
+	border-bottom:1px solid #d8261c;
+	border-right:1px solid #d8261c;
+	padding:5px;
+}
+#plugopt table  td {
+	border:0;
+}
+#plugopt table  th {
+	font-weight:bold;
+	text-align:left;
+	padding:5px;
+}
+#plugopt .top_bar {font-weight:bold;}
